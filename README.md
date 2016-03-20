@@ -36,30 +36,31 @@ The testing and training errors changes with difference max_depth parameter.
 
 3. Steps
 -------------
-**3.1 Read the Data Set. **
+***3.1 Read the Data Set ***
+
 The following is a summary of the the Boston Housing dataset.
 
 -  Total number of houses: 506
 - Total number of features: 13
 - Mean/Median house price: 22.53/21.20 (in $1000's) (so cheeeeeep!)
 
-**3.2 Data Preparation**. 
+***3.2 Data Preparation***
 
 - Randomly shuffle the data X and target labels (housing values) y
 - Split the data into training (70%) and testing (30%) subsets
 
-**3.3 Model Development**. 
+***3.3 Model Development***
 
 - Perform a total error calculation (mean squared error, MSE) between the true values of y (y_true) and the predicted values of the y (y_predict)
 - Create a scoring function using MSE
 - Build a grid search model using regressor
 
-**3.4 Model Evaluation**. 
+**3.4 Model Evaluation**
 
 - Evaluate the performances of the decision tree regressor
 - Find out the optimal parameters (max depth) for the model
 
-**3.5 Housing Price Prediction**. 
+***3.5 Housing Price Prediction***
 
 - Collect the features of a client's house 
 - Predict the best selling price based on the optimized model
